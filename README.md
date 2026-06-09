@@ -81,53 +81,26 @@ Market-Risk-Framework-for-a-Multi-Asset-Futures/
 ```
 
 ---
-
-## How to run
 ## How to run
 
-This repository is designed so the results can be reviewed directly from the README, while the full analysis can be reproduced from the notebook.
+### Option 1: Run in Google Colab
 
-### 1. Clone the repository
+Open the notebook in Google Colab and run all cells from top to bottom.
+
+The notebook downloads public data using `yfinance`, constructs the futures strategy, applies volatility targeting, runs risk diagnostics, and exports the figures and tables used in this README.
+
+### Option 2: Run locally
 
 ```bash
 git clone https://github.com/<your-username>/Market-Risk-Framework-for-a-Multi-Asset-Futures.git
 cd Market-Risk-Framework-for-a-Multi-Asset-Futures
-```
 
-### 2. Create a virtual environment
-
-```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook
 ```
-
-On Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install pandas numpy matplotlib scipy yfinance openpyxl jupyter
-```
-
-The project uses:
-
-* `pandas` and `numpy` for return construction, portfolio calculations, and table generation
-* `yfinance` for public market data
-* `matplotlib` for figures
-* `scipy` for formal VaR backtesting tests
-* `openpyxl` for Excel table export
-* `jupyter` to run the notebook interactively
-
-### 4. Run the notebook
-
-Open Google Colab, then run the project notebook from top to bottom.
-
-The notebook downloads futures and benchmark data, constructs the strategy, applies volatility targeting, models transaction costs, runs performance diagnostics, performs VaR and Expected Shortfall testing, and generates stress-test outputs.
-
+---
 
 ### 5. Notes on reproducibility
 

@@ -1,0 +1,24 @@
+,,Value
+Kupiec,Observations,5605
+Kupiec,Breaches,300
+Kupiec,Expected Breach Probability,0.050000000000000044
+Kupiec,Observed Breach Rate,0.05352363960749331
+Kupiec,Kupiec LR,1.4335929730150383
+Kupiec,Kupiec p-value,0.23117895729736437
+Kupiec,Reject 5%,False
+Christoffersen,N00,5028
+Christoffersen,N01,276
+Christoffersen,N10,276
+Christoffersen,N11,24
+Christoffersen,P Breach After No Breach,0.05203619909502263
+Christoffersen,P Breach After Breach,0.08
+Christoffersen,Christoffersen LR Independence,3.863521740392116
+Christoffersen,Christoffersen p-value,0.049346646187767296
+Christoffersen,Reject 5%,True
+Basel,Window,250
+Basel,Breaches,12
+Basel,Basel Zone,Red
+Clustering,Number of Breaches,300.0
+Clustering,Longest Breach Cluster,3.0
+Clustering,Average Days Between Breaches,27.277591973244146
+Clustering,Share Consecutive Breaches,0.08
